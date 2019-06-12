@@ -1,0 +1,8 @@
+create table compra(
+idCompra int primery key auto_increment,
+dataCompra Date,
+idLivro int,
+valorCompra float,
+idAdministrador int,
+FOREIGN KEY (idLivro) REFERENCES 'livro' ('idLivro'),
+FOREIGN KEY (idAdministrador) REFERENCES 'Usuario' (idUsuario));
